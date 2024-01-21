@@ -1,10 +1,14 @@
 from flask import Flask, render_template, redirect, request
+# from flask_ngrok import run_with_ngrok
 from pytube import YouTube
 import subprocess
 import os
 
 
 app = Flask(__name__)
+
+# Tried ngrok to make it temporarily accessible over the internet
+# run_with_ngrok(app)
 
 
 @app.route('/')
@@ -41,4 +45,4 @@ def download():
 
 # flask run will successfully run the server without the code below, but python3 app.py can only run the server successfully with the code below
 if __name__ == '__main__':
-    app.run(debug = False)
+    app.run()
