@@ -34,7 +34,7 @@ def download():
         audioPath = videoPath.replace(".mp4", ".mp3")
         print(audioPath)
 
-        subprocess.run(['ffmpeg', '-i', videoPath, '-q:a', '0', '-map', 'a', audioPath])
+        # subprocess.run(['ffmpeg', '-i', videoPath, '-q:a', '0', '-map', 'a', audioPath])
 
         print("Success")
         return redirect('/')
