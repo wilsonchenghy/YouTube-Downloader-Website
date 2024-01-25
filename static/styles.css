@@ -1,3 +1,18 @@
 body {
     background-color: rgba(117, 191, 244, 0.87);
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* height needed to be specify so that the vertical align-items work */
+    height: 100vh;
+
+    flex-direction: column;
+}
+
+form{
+    margin: 10px;
+}

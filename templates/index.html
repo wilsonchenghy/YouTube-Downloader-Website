@@ -9,16 +9,18 @@
     </head>
 
     <body>
-        <form action="/downloadVideo" method="post">
-            <label for="youTubeUrl">Enter YouTubeURL: </label>
-            <input type="text" id="youTubeUrl" name="youTubeUrl" required>
-            <button>Download Video</button>
-        </form>
+        <div class="container">
+            <form action="/downloadVideo" method="post">
+                <label for="youTubeUrl">Enter YouTubeURL: </label>
+                <input type="text" id="youTubeUrl" name="youTubeUrl" required>
+                <button>Download Video</button>
+            </form>
 
-        <form action="/downloadPlaylist" method="post">
-            <label for="playlistUrl">Enter Playlist URL: </label>
-            <input type="text" id="playlistUrl" name="playlistUrl" required>
-            <button>Download Playlist</button>
-        </form>
+            <form action="/downloadPlaylist" method="post">
+                <label for="playlistUrl">Enter Playlist URL: </label>
+                <input type="text" id="playlistUrl" name="playlistUrl" required>
+                <button>Download Playlist</button>
+            </form>
+        </div>
     </body>
 </html>
